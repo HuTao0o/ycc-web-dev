@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация на ГосУслугах</title>
+</head>
+
+<body>
+    <h1>Вход</h1>
+    <form method="post" action="/login">
+
+        <p>
+            <label for="login" data-icon="u">Логин</label>
+            <input id="login" name="login" type="text" placeholder="Введите логин/e-mail" required>
+        </p>
+        <p>
+            <label for="password" data-icon="u">Пароль</label>
+            <input id="password" name="password" type="password" placeholder="Введите пароль" required>
+        </p>
+        <p>
+            <input id="rememberMe" name="rememberMe" type="checkbox" required>
+            <label for="rememberMe" data-icon="u">Запомнить меня</label>
+        </p>    
+        <input type="submit" value="Войти">
+    </form>
+</body>
+
+</html>
