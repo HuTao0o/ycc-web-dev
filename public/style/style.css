@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 .container {
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@
     background: linear-gradient(120deg, #d71b1b, #8a279b);
     overflow: hidden;
 }
+
 .center-card {
     position: absolute;
     top: 50%;
@@ -18,7 +20,7 @@
     width: 400px;
     background: white;
     border-radius: 10px;
-    box-shadow: 10px, 10px 15px rgba(0,0,0,0,05);
+    box-shadow: 10px, 10px 15px rgba(0, 0, 0, 0, 05);
 }
 
 .center-card h1 {
@@ -32,11 +34,13 @@
     box-sizing: border-box;
 
 }
-.form-card .field {
+
+.card-body .field {
     position: relative;
     border-bottom: 2px solid #adadad;
     margin: 30px 0;
 }
+
 .field input {
     width: 100%;
     padding: 0 5px;
@@ -45,4 +49,48 @@
     border: none;
     background: none;
     outline: none;
+}
+
+.field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 1s;
+}
+
+.field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #b310f3;
+    transition: .5s;
+}
+
+.field input:focus~label,
+.field input:valid~label {
+    top: -5px;
+    color: #b310f3;
+}
+.btn-submit {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #b310f3;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer ;
+    outline: none;
+}
+
+.btn-submit:hover {
+    background: #f1227f;
+    transition: .5s;
 }

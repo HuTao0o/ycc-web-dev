@@ -15,14 +15,16 @@
 
             <h1>Вход</h1>
             <form method="post" action="/login" class="card-body">
-        
-                <div class="field"
+
+                <div class="field">
+                    <input id="login" name="login" type="text" required>
+                    <span></span>
                     <label for="login" data-icon="u">Логин</label>
-                    <input id="login" name="login" type="text" placeholder="Введите логин/e-mail" required>
                 </div>
                 <div class="field">
+                    <input id="password" name="password" type="password" required>
+                    <span></span>
                     <label for="password" data-icon="u">Пароль</label>
-                    <input id="password" name="password" type="password" placeholder="Введите пароль" required>
                 </div>
                 <div class="field">
                     <input id="rememberMe" name="rememberMe" type="checkbox" required>
@@ -30,7 +32,7 @@
                 </div>
                 <a href="/Registration/register.html">Зарегистрироваться</a>
 
-                <input type="submit" value="Войти">
+                <input class="btn-submit" type="submit" value="Войти">
             </form>
         </div>
     </div>
