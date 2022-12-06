@@ -5,43 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/style.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="../style/style2.css">
+    <title>Стать анимешником</title>
 </head>
 
 <body>
     <div class="container">
         <div class="center-card">
 
-            <h1>Тест на анимешника</h1>
+            <h1>Процесс становления анимешником</h1>
             <form method="post" action="/login" class="card-body">
 
                 <div class="field">
                     <input id="login" name="login" type="text" required>
                     <span></span>
-                    <label for="login" data-icon="u">Как твое имя?</label>
+                    <label for="login" data-icon="u">Как тебя будут звать?</label>
                 </div>
                 <div class="field">
                     <input id="password" name="password" type="password" required>
                     <span></span>
-                    <label for="password" data-icon="u">Твое кодовое слово?</label>
+                    <label for="password" data-icon="u">Придумай кодовое слово</label>
                 </div>
                 <input class="btn-submit" type="submit" value="Начать приключение" href="index.html">
                 <div class="link">
-                    Еще нравятся девочки?
-                    <a href="/Registration/register2.html">Вступай в ряды анимешников!</a>
+                    Уже анимешник?
+                    <a href="/Registration/login.html">Пройти тест</a>
                 </div>
             </form>
         </div>
     </div>
 </body>
-<script>
-    let answer = confirm('Есть 18?');
-    alert(`Твой ответ: ${answer}`);
-
-    console.log('А я знаю, что ты...')
-    console.log(`Ответ пользователя: ${answer}`)
-    
-</script>
 
 </html>
