@@ -13,29 +13,35 @@
     <div class="container">
         <div class="center-card">
 
-            <h1>Вход</h1>
+            <h1>Тест на анимешника</h1>
             <form method="post" action="/login" class="card-body">
 
                 <div class="field">
                     <input id="login" name="login" type="text" required>
                     <span></span>
-                    <label for="login" data-icon="u">Логин</label>
+                    <label for="login" data-icon="u">Как твое имя?</label>
                 </div>
                 <div class="field">
                     <input id="password" name="password" type="password" required>
                     <span></span>
-                    <label for="password" data-icon="u">Пароль</label>
+                    <label for="password" data-icon="u">Твое кодовое слово?</label>
                 </div>
-                <div class="field">
-                    <input id="rememberMe" name="rememberMe" type="checkbox" required>
-                    <label for="rememberMe" data-icon="u">Запомнить меня</label>
+                <input class="btn-submit" type="submit" value="Начать приключение">
+                <div class="link">
+                    Еще нравятся девочки?
+                    <a href="/Registration/register.html">Вступай в ряды анимешников!</a>
                 </div>
-                <a href="/Registration/register.html">Зарегистрироваться</a>
-
-                <input class="btn-submit" type="submit" value="Войти">
             </form>
         </div>
     </div>
 </body>
+<script>
+    let answer = confirm('Есть 18?');
+    alert(`Твой ответ: ${answer}`);
+
+    console.log('А я знаю, что ты...')
+    console.log(`Ответ пользователя: ${answer}`)
+    
+</script>
 
 </html>
